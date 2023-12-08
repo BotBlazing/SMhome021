@@ -10,6 +10,7 @@
     background-color: aliceblue;
     overflow-y: scroll;
     max-height: 550px;
+    display: none;
 }
 
 .cartItemBox {
@@ -32,8 +33,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
-    height: 70px;
+    width: 4.5em;
+    height: 4.5em;
 }
 
 
@@ -78,6 +79,11 @@
     text-align: center;
     display: flex; 
     justify-content: center;
+}
+
+.productQuantity {
+    border: #000000;
+    display: block;
 }
 
 .addItemButton,
@@ -152,7 +158,7 @@ h4 {
     padding: 2rem 1rem;
     background: var(--white);
     outline: var(--outline);
-    outline-offset: -1rem;
+    outline-offset: -0.5rem;
     text-align: center;
     
     margin-right: 5px;
