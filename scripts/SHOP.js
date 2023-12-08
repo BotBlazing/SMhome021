@@ -272,9 +272,6 @@ function decreaseItemNumber(item) {
         item.n--;
         currentNumberDisplay.innerText = item.n.toString().padStart(2, '0');
     }
-    else {
-        removeFromCart(document.getElementById("remove"+item.name));
-    }
     printTotal(); 
     uploadCartToSessionStorage();
 }
