@@ -180,6 +180,9 @@ function displayProducts1(filteredProducts) {
         noResultsMessage.textContent = "No matching products found.";
         container.appendChild(noResultsMessage);
     } else {
+
+        filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+        
         filteredProducts.forEach(function(product) {
             var box = createProductBox(product);
             container.appendChild(box);
@@ -196,6 +199,9 @@ function displayProducts2(filteredProducts) {
         noResultsMessage.textContent = "No matching products found.";
         container.appendChild(noResultsMessage);
     } else {
+
+        filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+
         filteredProducts.forEach(function(product) {
             var box = createProductBox(product);
             container.appendChild(box);

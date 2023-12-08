@@ -1,5 +1,5 @@
 :root{
-    --blue: #0077FF;
+    --blue: #88bbf6;
     --white: #fff;
     --black: black;
     --grey: #333;
@@ -95,12 +95,12 @@ html{
     cursor: pointer;
     background: none;
     transition: 0.5s linear;
-    background-color: #3498db;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--black);
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    border: 4px solid #fff;
+    border: 4px solid var(--white);
 }
 
 .frigo .box-container{

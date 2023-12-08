@@ -220,8 +220,8 @@ function toggleCleaner(state) {
 function decreasePowerValue() {
     const currentPowerDisplay = document.getElementById('currentPower');
     
-    if (currentPower > 1) {
-        currentPower--;
+    if (currentPower > 10) {
+        currentPower=currentPower-10;
         currentPowerDisplay.textContent = currentPower + "%";
         change = true;
         
@@ -232,7 +232,7 @@ function increasePowerValue() {
     const currentPowerDisplay = document.getElementById('currentPower');
    
     if (currentPower < 100) {
-        currentPower++;
+        currentPower=currentPower+10;
         currentPowerDisplay.textContent = currentPower + "%";
         change = true;
         

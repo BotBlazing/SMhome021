@@ -43,6 +43,9 @@ function GoBack() {
 }
 
 function displayItems() {
+
+    buyList.sort((a, b) => a.name.localeCompare(b.name));
+    
     for (let i=0 ; i < buyList.length; i++){
         const itemBox = document.createElement("div");
         itemBox.classList.add("box");
